@@ -1,0 +1,135 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.header {
+  background-color: powderblue;
+  color: #fff;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 a {
+    /* background-color: gold; */
+    color: rgb(235, 80, 9);
+}
+
+.header h1 a {
+    text-decoration: none;
+}
+.header h1 a:hover {
+    color: white    ;
+}
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 6rem;
+  /* justify-content: space-between; */
+  margin: 0 auto
+  max-width: 1200px;
+  /* width: 75%; */
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.header nav a:hover {
+  color: rgb(235, 80, 9);
+}
+
+.hero {
+  margin-top: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  height: 100%;
+  /* max-width: 100%; */
+  /* transform: scale(1); */
+}
+
+.products {
+  padding: 2rem;
+  text-align: center;
+}
+
+.products h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* height: 250px; */
+}
+
+.product-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  /* height: 250px; */
+  /* object-fit: cover;  */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.product-card p {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.product-card button {
+  padding: 0.5rem 1rem;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.product-card button:hover {
+  background-color: #f0c040;
+  color: #111;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: #fff;
+}
